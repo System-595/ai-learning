@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# AI Learning Platform
+An interactive learning platform that helps users learn JavaScript, Python, and Java through AI-powered personalized learning pathways, quizzes, and a built-in code editor.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🚀 Features
+Interactive Code Editor: Run JavaScript, Python, and Java code directly in the browser.
+Programming Courses: Beginner-friendly courses for JavaScript, Python, and Java.
+Quizzes & Assessments: Test your knowledge with multiple-choice quizzes.
+User Dashboard: Track your course progress and quiz performance.
+Authentication: Secure user authentication with Firebase.
+Responsive UI: Tailwind CSS-based styling for a modern user experience.
 
-## Available Scripts
+# 🛠 Tech Stack
+Frontend: React 18, Tailwind CSS, Firebase Authentication
+Backend: Node.js 20.18.0 (for API integration)
+Database: Firestore (for storing user progress and quiz scores)
+Hosting: Firebase & Custom Domain ai.divyaansh.in
+Code Execution API: Piston API for running code in multiple languages
 
-In the project directory, you can run:
+# 🔧 Installation & Setup
+Prerequisites
+Ensure you have Node.js 20.18.0 installed on your system.
 
-### `npm start`
+Steps to Run Locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Clone this repository:
+git clone https://github.com/your-username/ai-learning-platform.git
+cd ai-learning-platform
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Install dependencies:
+npm install
+Configure Firebase:
 
-### `npm test`
+- Replace the Firebase configuration in firebaseConfig.js with your own Firebase credentials.
+Start the development server:
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Open the application in your browser:
+http://localhost:3000
 
-### `npm run build`
+# 📌 Features in Detail
+1️⃣ Code Editor
+Uses Monaco Editor for a VS Code-like experience.
+Executes JavaScript, Python, and Java using the Piston API.
+2️⃣ Courses
+JavaScript, Python, and Java courses with structured lessons.
+Progress tracking stored in Firestore.
+3️⃣ Quizzes
+Language-based quizzes to assess programming knowledge.
+Scores are saved in Firestore under quizResults.
+4️⃣ Dashboard
+Displays course progress and quiz scores.
+Fetches data from Firestore for each authenticated user.
+5️⃣ Authentication
+Users can sign up, log in, and track their progress securely with Firebase Authentication.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 🚀 Deployment
+The project is hosted on Firebase and accessible at ai.divyaansh.in.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- To deploy:
+npm run build
+firebase deploy
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 👥 Contributors
+ - Divyaansh Rai Gandhi - Team Lead
+ - Parv Khandelwal - Frontend & UI/UX
+ - Jaikrit Singh Khichi - Backend & Deployment
+ - Atharva Anand Amle - Backend
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
